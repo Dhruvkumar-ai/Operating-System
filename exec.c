@@ -4,7 +4,7 @@ int main()
 {
 	char* cmnd="ls";
 	char* argument[]={"ls","-l",NULL};
-	printf("Before execvp()\n");
+	printf("Before the execvp()\n");
 	int status= execvp(cmnd,argument);
 	if(status==-1)
 	{
